@@ -8,7 +8,12 @@ import (
 )
 
 func main() {
+	var length int
 	args := os.Args
-	length := count.Count(args[1])
+	if len(args) > 1 {
+		length = count.Count(args[1])
+	} else {
+		length = 0
+	}
 	fmt.Println(length)
 }
