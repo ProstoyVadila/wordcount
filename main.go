@@ -10,6 +10,7 @@ import (
 func main() {
 	var length int
 	args := os.Args
+
 	if len(args) > 1 {
 		length = count.Count(args[1])
 	} else {
